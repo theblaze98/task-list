@@ -1,0 +1,217 @@
+/* ------------------------ */
+/* Variables */
+/* ------------------------ */
+
+
+
+/* ------------------------ */
+/* Estilos Generales */
+/* ------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+/* ------------------------ */
+/* Contenedor */
+/* ------------------------ */
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+/* ------------------------ */
+/* Task List */
+/* ------------------------ */
+
+.task-list {
+    width: 100%;
+    padding: 20px;
+}
+
+.task-list ul {
+    width: 100%;
+}
+
+.task-list ul .task {
+    margin-bottom: 30px;
+    width: 100%;
+    position: relative;
+}
+
+.task-list ul .task .fa-square {
+    color: #4385ff;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+}
+
+.task-list ul .task .task-name {
+    font-size: 1.25rem;
+    color: #4385ff;
+}
+
+.task-list ul .task .description {
+    width: 80%;
+    font-size: 0.88rem;
+    color: #393c45;
+}
+
+.task-list ul .task .fa-times {
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    position: absolute;
+    top: 20px;
+    right: 10%;
+}
+
+.task-list ul .task:hover .fa-times {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* ------------------------ */
+/* Botones */
+/* ------------------------ */
+
+.btn {
+    background: #4385ff;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+}
+
+.btn:hover {
+    background: #4492ff;
+}
+
+/* ------------------------ */
+/* Add Task */
+/* ------------------------ */
+
+.popup {
+    width: 100%;
+    display: none;
+    position: fixed;
+    background: rgba(0, 0, 0, .2);
+    height: 100vh;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup.active {
+    display: flex;
+}
+
+.popup .add-task {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 10px 5px #b8bfe5;
+}
+
+.popup .add-task label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4385ff;
+    padding: 10px;
+}
+
+.popup .add-task .input-task-name {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.88rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 2px solid #4492ff;
+    margin-bottom: 10px;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+}
+
+.popup .add-task .input-task-name:hover {
+    border-color: #4385ff;
+}
+
+.popup .add-task .input-task-name:focus {
+    border-color: #4385ff;
+}
+
+.popup .add-task textarea {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.88rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 2px solid #4492ff;
+    resize: none;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.popup .add-task textarea:hover {
+    border-color: #4385ff;
+}
+
+.popup .add-task textarea:focus {
+    border-color: #4385ff;
+}
+
+.popup .add-task .btn-cancel {
+    background: #b8bfe5;
+}
+
+.popup .add-task .btn-cancel:hover {
+    background: #8f94b2;
+}

@@ -19,6 +19,7 @@
                     <p class="description">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, fugit.
                     </p>
+                    <span id="delete_task" class="fas fa-times"></span>
                 </li>
                 <li class="task">
                     <span class="fa-li"><i class="far fa-square"></i></span>
@@ -26,15 +27,24 @@
                     <p class="description">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, fugit.
                     </p>
+                    <span id="delete_task" class="fas fa-times"></span>
                 </li>
             </ul>
         </div>
-        <div class="add-task">
-            <label for="task-list">Nombre de la Tarea</label>
-            <input type="text" id="input_task_name" class="input-task-name">
 
-            <label for="task_description">Descripci&oacute;n de la Tarea</label>
-            <textarea id="task_description" class="task-description" maxlength="200"></textarea>
+        <button id="btn_add_task" class="btn">Añadir Tarea</button>
+
+        <div class="popup" id="popup">
+            <div class="add-task">
+                <label for="task-list">Nombre de la Tarea</label>
+                <input type="text" id="input_task_name" class="input-task-name">
+
+                <label for="task_description">Descripci&oacute;n de la Tarea</label>
+                <textarea id="task_description" class="task-description" maxlength="210"></textarea>
+
+                <button id="btn_ready" class="btn">Listo</button>
+                <button id="btn_cancel" class="btn btn-cancel">Cancelar</button>
+            </div>
         </div>
     </div>
 </body>
