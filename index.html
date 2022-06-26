@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="task-list" id="task_list">
+            <ul class="fa-ul list">
+                <li class="task">
+                    <span class="fa-li"><i class="far fa-square"></i></span>
+                    <h4 class="task-name">Nombre de la Tarea</h4>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, fugit.
+                    </p>
+                </li>
+                <li class="task">
+                    <span class="fa-li"><i class="far fa-square"></i></span>
+                    <h4 class="task-name">Nombre de la Tarea</h4>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, fugit.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="add-task">
+            <label for="task-list">Nombre de la Tarea</label>
+            <input type="text" id="input_task_name" class="input-task-name">
+
+            <label for="task_description">Descripci&oacute;n de la Tarea</label>
+            <textarea id="task_description" class="task-description" maxlength="200"></textarea>
+        </div>
+    </div>
+</body>
+</html>
