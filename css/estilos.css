@@ -1,10 +1,4 @@
 /* ------------------------ */
-/* Variables */
-/* ------------------------ */
-
-
-
-/* ------------------------ */
 /* Estilos Generales */
 /* ------------------------ */
 
@@ -59,6 +53,16 @@ body {
     -o-transition: all ease .5s;
 }
 
+.task-list ul .task .fa-check-square {
+    font-weight: 900;
+    color: #4385ff;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+}
+
 .task-list ul .task .task-name {
     font-size: 1.25rem;
     color: #4385ff;
@@ -72,6 +76,7 @@ body {
 
 .task-list ul .task .fa-times {
     opacity: 0;
+    color: #4385ff;
     pointer-events: none;
     cursor: pointer;
     transition: all ease .3s;
