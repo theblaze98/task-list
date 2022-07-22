@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 /* ------------------------ */
 /* Estilos Generales */
 /* ------------------------ */
@@ -128,7 +130,7 @@ body {
 
 .popup {
     width: 100%;
-    display: none;
+    display: flex;
     position: fixed;
     background: rgba(0, 0, 0, .2);
     height: 100vh;
@@ -136,10 +138,26 @@ body {
     left: 0;
     justify-content: center;
     align-items: center;
+    transform: translateY(-1000px);
+    -webkit-transform: translateY(-1000px);
+    -moz-transform: translateY(-1000px);
+    -ms-transform: translateY(-1000px);
+    -o-transform: translateY(-1000px);
+    opacity: 0;
+    transition: opacity ease-in-out 1s;
+    -webkit-transition: opacity ease-in-out 1s;
+    -moz-transition: opacity ease-in-out 1s;
+    -ms-transition: opacity ease-in-out 1s;
+    -o-transition: opacity ease-in-out 1s;
 }
 
 .popup.active {
-    display: flex;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
 }
 
 .popup .add-task {

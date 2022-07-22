@@ -9,6 +9,8 @@ const popup = document.getElementById('popup');
 const btn_cancel = document.getElementById('btn_cancel');
 const btn_ready = document.getElementById('btn_ready');
 let checks;
+const task_name = document.getElementById('input_task_name');
+const task_description = document.getElementById('task_description');
 
 /* ------------------------ */
 /* Eventos */
@@ -19,11 +21,17 @@ btn_add_task.addEventListener('click', (e) => {
 });
 
 popup.addEventListener('click', (e) => {
-    e.target.id === popup.id ? popup.classList.remove('active') : '';
+    if (e.target.id === popup.id) {
+        popup.classList.remove('active');
+        task_name.value = '';
+        task_description.value = '';
+    }
 });
 
 btn_cancel.addEventListener('click', (e) => {
     popup.classList.remove('active');
+    task_name.value = '';
+    task_description.value = '';
 });
 
 btn_ready.addEventListener('click', (e) => {
@@ -55,8 +63,7 @@ btn_ready.addEventListener('click', (e) => {
 /* ------------------------ */
 
 const add_task = function() {
-    const task_name = document.getElementById('input_task_name');
-    const task_description = document.getElementById('task_description');
+    
 
     task_list.innerHTML += `
         <li class="task">
